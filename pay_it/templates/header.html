@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay-It</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/header.css' %}">
+</head>
+<body>
+    {% block nav %}
+    <header>
+            <H1>Stable Cash</H1> 
+        <div class="secret-menu">
+            <ul class="topnav">
+                <li><a href="">home</a></li>
+                <li><a href="">checkbook</a></li>
+                <li><a href="">emergency funds</a></li>
+                <li><a href="">savings</a></li>
+                <li><a href="">debts</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    
+    {% endblock %}
+    
+    
+    <script src="{% static 'styles/header.js' %}"></script>
+</body>
+</html>
